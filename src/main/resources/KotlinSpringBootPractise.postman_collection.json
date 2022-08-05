@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "eb9cb7cb-b2a8-4d5b-92a1-f2cca5659002",
+		"name": "KotlinSpringBootPractise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Mukesh\",\r\n    \"lastName\": \"Dutta\",\r\n    \"salary\" : 10001.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Mukesh\",\r\n    \"lastName\": \"Dutta\",\r\n    \"salary\" : 10021.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Mukesh\",\r\n    \"lastName\": \"Dutta\",\r\n    \"salary\" : 10001.00,\r\n    \"id\": 102\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/101",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Employees ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Mukesh\",\r\n    \"lastName\": \"Dutta\",\r\n    \"salary\" : 10001.00,\r\n    \"id\": 102\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Mukesh\",\r\n    \"lastName\": \"Dutta\",\r\n    \"salary\" : 10001.00,\r\n    \"id\": 102\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/102",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Employee Bulk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"firstName\": \"Mukesh\",\r\n        \"lastName\": \"Dutta\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"Chandu\",\r\n        \"lastName\": \"Vutukuri\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"Durga\",\r\n        \"lastName\": \"Prasad\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"Venu\",\r\n        \"lastName\": \"Gopal\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"Mahesh\",\r\n        \"lastName\": \"M\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"M\",\r\n        \"lastName\": \"N\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"M\",\r\n        \"lastName\": \"H\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"U\",\r\n        \"lastName\": \"K\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"D\",\r\n        \"lastName\": \"E\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"V\",\r\n        \"lastName\": \"L\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"V\",\r\n        \"lastName\": \"V\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"V\",\r\n        \"lastName\": \"CP\",\r\n        \"salary\": 10001.00\r\n    },\r\n    {\r\n        \"firstName\": \"V\",\r\n        \"lastName\": \"H\",\r\n        \"salary\": 10001.00\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/bulk",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employees Pagination ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Mukesh\",\r\n    \"lastName\": \"Dutta\",\r\n    \"salary\" : 10001.00,\r\n    \"id\": 102\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/page/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"page",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
